@@ -26,7 +26,8 @@
 ### Docker kurulumu ve gereklilikler.
 
 ```
-sudo apt-get update
+apt-get update
+apt-get upgrade
 ```
 ```
 sudo apt-get install ca-certificates curl gnupg
@@ -85,13 +86,18 @@ docker logs -f --tail 100 docker-id
 ### Gereklilikler
 
 ```
-sudo apt-get update
+apt-get update
+apt-get upgrade
 ```
 ```
 sudo apt-get install ca-certificates curl gnupg zip libssl-dev clang gcc git
 ```
 ```
 sudo apt-get install rustc
+```
+```
+apt-get update
+apt-get upgrade
 ```
 ### Rust kuralım
 ```
