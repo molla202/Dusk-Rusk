@@ -20,7 +20,7 @@
 | ✔️CPU |	2+ vcpu|
 | ✔️RAM	| 4+ GB |
 | ✔️Storage	| 160+ GB SSD |
-| ✔️UBUNTU | 20or22 |
+| ✔️UBUNTU | 22 |
 
 
 ### Docker kurulumu ve gereklilikler.
