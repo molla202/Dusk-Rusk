@@ -108,7 +108,7 @@ git clone https://github.com/dusk-network/rusk.git
 cd rusk
 ```
 ```
-Screen -S dusk
+screen -S dusk
 ```
 > Generate the keys used by the circuits
 ```
