@@ -110,15 +110,15 @@ cd rusk
 ```
 screen -S dusk
 ```
-> Generate the keys used by the circuits
+> Keyleri olusturalım
 ```
 make keys
 ```
-> Compile all the genesis contracts
+> Genesis contracts
 ```
 make wasm
 ```
-> Build the node
+> Yapılandıralım
 ```
 cargo b --release -p rusk
 ```
