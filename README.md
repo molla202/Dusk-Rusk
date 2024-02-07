@@ -80,6 +80,70 @@ docker logs -f --tail 100 docker-id
 ```
 
 
+# Normal kurulum
+
+### Gereklilikler
+
+```
+sudo apt-get update
+```
+```
+sudo apt-get install ca-certificates curl gnupg zip libssl-dev clang gcc git
+```
+```
+sudo apt-get install rustc
+```
+### Rust kuralım
+```
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs/ | sh
+```
+```
+source $HOME/.cargo/env
+```
+### Dosyaları çekelim ve kuralım
+```
+git clone https://github.com/dusk-network/rusk.git
+```
+```
+cd rusk
+```
+```
+Screen -S dusk
+```
+> Generate the keys used by the circuits
+> ```
+make keys
+```
+> Compile all the genesis contracts
+```
+make wasm
+```
+> Build the node
+```
+cargo b --release -p rusk
+```
+```
+mkdir -p ~/.dusk/rusk
+```
+```
+cp examples/consensus.keys ~/.dusk/rusk/consensus.keys
+```
+```
+cargo r --release -p rusk -- recovery-state --init examples/genesis.toml
+```
+```
+DUSK_CONSENSUS_KEYS_PASS=password cargo r --release -p rusk -- -c rusk/default.config.toml
+```
+NOT: loglar akmaya başlayacaktır screenden cıkmak için ctrl ad girmek için screen -r dusk. screende ctrl c DEMEYİN.
+
+![image](https://github.com/molla202/Dusk-Rusk/assets/91562185/2dbe0c8d-3a2d-4492-970a-63842bff4830)
+
+
+
+
+
+
+
 
 
 
