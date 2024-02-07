@@ -111,7 +111,7 @@ cd rusk
 Screen -S dusk
 ```
 > Generate the keys used by the circuits
-> ```
+```
 make keys
 ```
 > Compile all the genesis contracts
