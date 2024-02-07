@@ -141,7 +141,9 @@ NOT: loglar akmaya başlayacaktır screenden cıkmak için ctrl ad girmek için 
 
 
 
+# Bazı alınan hatalar...
 
+...........
 
 
 
